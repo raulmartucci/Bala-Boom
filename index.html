@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BalaBoom — Grupo 19 · GameJam 2026</title>
+<meta name="description" content="BalaBoom, jogo desenvolvido pelo Grupo 19 para a GameJam 2026. Ajude Nico, o gato fantasma, a recuperar as cores do mundo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Fita decorativa fixa no topo -->
+<div class="topbar-strip" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#topo" class="nav__brand">
+      <img src="assets/logo-balaboom.png" alt="" class="nav__brand-mark">
+      BalaBoom
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#topo" class="nav__link">Início</a>
+      <a href="#sobre" class="nav__link">O Jogo</a>
+      <a href="#gameplay" class="nav__link">Gameplay</a>
+      <a href="#equipe" class="nav__link">Equipe</a>
+      <a href="#jogar" class="nav__link nav__link--cta">Jogar</a>
+    </nav>
+
+    <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="topo">
+  <div class="hero__blob hero__blob--yellow" aria-hidden="true"></div>
+  <div class="hero__blob hero__blob--pink" aria-hidden="true"></div>
+  <div class="hero__blob hero__blob--purple" aria-hidden="true"></div>
+  <div class="hero__blob hero__blob--green" aria-hidden="true"></div>
+
+  <div class="hero__content reveal">
+    <img src="assets/logo-balaboom.png" alt="BalaBoom" class="hero__logo">
+
+    <p class="hero__tagline">Um jogo desenvolvido pelo <strong>Grupo 19</strong> para a <strong>GameJam 2026</strong></p>
+
+    <div class="hero__actions">
+      <a href="#jogar" class="btn btn--primary">
+        <span>Jogar agora</span>
+      </a>
+      <a href="#sobre" class="btn btn--ghost">Conheça o projeto</a>
+    </div>
+  </div>
+
+  <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== SOBRE O JOGO ===== -->
+<section class="sobre" id="sobre">
+  <div class="sobre__inner">
+    <div class="sobre__text reveal">
+      <span class="eyebrow eyebrow--pink">O jogo</span>
+      <h2 class="section-title">Um mundo que perdeu as cores</h2>
+      <p class="sobre__lead">
+        Nico é um gato fantasma que vive em um mundo onde todas as cores desapareceram
+        depois que uma bruxa as roubou com sua magia. Para restaurar a vida ao mundo,
+        Nico precisa enfrentar criaturas, superar obstáculos e coletar doces mágicos
+        que guardam parte das cores perdidas.
+      </p>
+      <p class="sobre__lead">
+        Ao final da jornada, ele enfrenta a própria bruxa para recuperar completamente
+        as cores do mundo.
+      </p>
+
+      <h3 class="sobre__subtitle">Objetivo do jogador</h3>
+      <ul class="pill-list">
+        <li class="pill-list__item pill-list__item--pink">Coletar doces mágicos</li>
+        <li class="pill-list__item pill-list__item--blue">Derrotar a bruxa</li>
+        <li class="pill-list__item pill-list__item--gold">Recuperar todas as cores do mundo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MECÂNICAS ===== -->
+<section class="mecanicas">
+  <div class="mecanicas__inner">
+    <span class="eyebrow eyebrow--purple">Como jogar</span>
+    <h2 class="section-title">Mecânicas do jogo</h2>
+
+    <ol class="mech-list reveal">
+      <li class="mech-list__item">
+        <span class="mech-list__key">Setas</span>
+        <p><strong>Andar</strong> — use as setas do teclado para movimentar Nico.</p>
+      </li>
+      <li class="mech-list__item">
+        <span class="mech-list__key">↑</span>
+        <p><strong>Pular</strong> — pressione a seta para cima para pular obstáculos.</p>
+      </li>
+      <li class="mech-list__item">
+        <span class="mech-list__key">Auto</span>
+        <p><strong>Coletar doces</strong> — ao encostar nos doces mágicos, Nico os coleta automaticamente.</p>
+      </li>
+      <li class="mech-list__item">
+        <span class="mech-list__key">Vida</span>
+        <p><strong>Tomar dano</strong> — ao encostar em obstáculos ou inimigos, Nico perde vida.</p>
+      </li>
+      <li class="mech-list__item">
+        <span class="mech-list__key">Especial</span>
+        <p><strong>Usar poderes</strong> — Nico pode usar habilidades especiais para superar desafios.</p>
+      </li>
+      <li class="mech-list__item">
+        <span class="mech-list__key">Final</span>
+        <p><strong>Derrotar a bruxa</strong> — no fim do jogo, Nico a enfrenta para recuperar todas as cores.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== GAMEPLAY / VÍDEO ===== -->
+<section class="gameplay" id="gameplay">
+  <div class="gameplay__inner">
+    <span class="eyebrow eyebrow--blue">Veja em ação</span>
+    <h2 class="section-title section-title--center">Gameplay</h2>
+    <p class="gameplay__sub">Um gostinho de como é jogar BalaBoom, direto da mesa do Grupo 19.</p>
+
+    <div class="player reveal">
+      <span class="player__dot player__dot--yellow" aria-hidden="true"></span>
+      <span class="player__dot player__dot--pink" aria-hidden="true"></span>
+      <span class="player__dot player__dot--green" aria-hidden="true"></span>
+      <span class="player__dot player__dot--purple" aria-hidden="true"></span>
+
+      <div class="player__frame">
+        <div class="player__thumb" id="playerThumb">
+          <div class="player__thumb-bg" aria-hidden="true"></div>
+          <button class="player__play" id="playBtn" aria-label="Reproduzir vídeo de gameplay">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+          </button>
+          <span class="player__caption">Gameplay · BalaBoom</span>
+        </div>
+        <video id="gameVideo" class="player__video" controls playsinline poster="">
+          <source src="" type="video/mp4">
+          Seu navegador não suporta vídeo incorporado.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EQUIPE ===== -->
+<section class="equipe" id="equipe">
+  <div class="equipe__inner">
+    <span class="eyebrow eyebrow--purple">Grupo 19</span>
+    <h2 class="section-title section-title--center">Nosso time</h2>
+    <p class="equipe__sub">Oito pessoas, uma fábrica de doces e uma GameJam para chamar de nossa.</p>
+
+    <div class="team-grid" id="teamGrid"></div>
+  </div>
+</section>
+
+<!-- ===== JOGAR ===== -->
+<section class="jogar" id="jogar">
+  <div class="jogar__blob jogar__blob--a" aria-hidden="true"></div>
+  <div class="jogar__blob jogar__blob--b" aria-hidden="true"></div>
+
+  <div class="jogar__inner reveal">
+    <span class="eyebrow eyebrow--yellow">Pronto pra explodir?</span>
+    <h2 class="section-title section-title--center jogar__title">Jogue BalaBoom</h2>
+    <p class="jogar__sub">
+      O jogo completo, feito do zero pelo Grupo 19 durante a GameJam 2026.
+      Sem instalação — direto no navegador.
+    </p>
+
+    <a href="#" class="btn btn--big" id="jogarBtn">
+      <span>Jogar BalaBoom</span>
+    </a>
+    <p class="jogar__hint">Hospedado externamente? O botão acima leva direto para a versão jogável.</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo-balaboom.png" alt="BalaBoom" class="footer__logo-mark">
+      <p>Grupo 19 — GameJam 2026</p>
+      <a href="https://instagram.com/balaboom.game" target="_blank" rel="noopener" class="footer__ig">@balaboom.game</a>
+    </div>
+
+    <nav class="footer__nav">
+      <a href="#topo">Início</a>
+      <a href="#sobre">O Jogo</a>
+      <a href="#gameplay">Gameplay</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#jogar">Jogar</a>
+    </nav>
+
+    <div class="footer__credits">
+      <p>Créditos</p>
+      <ul id="footerCredits"></ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>Grupo 19 · GameJam 2026</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
