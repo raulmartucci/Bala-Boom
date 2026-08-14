@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { nome: "Nicolas Henrique", funcao: "Game Artist", desc: "2º JOD", cor: "blue", instagram: "" },
     { nome: "Matheus", funcao: "Programação", desc: "3º JOD", cor: "green", instagram: "" },
     { nome: "Josué", funcao: "Programação", desc: "3º JOD", cor: "green", instagram: "" },
-    { nome: "Ana Beatriz C.", funcao: "Arte e comunicação", desc: "1º JOD", cor: "pink", instagram: "" },
+    { nome: "Ana Beatriz C.", funcao: "Arte e comunicação", desc: "1º JOD", cor: "pink", instagram: "beatrizlwy" },
     { nome: "Raul Galdino", funcao: "Desenvolvedor Web", desc: "3º DES", cor: "gold", instagram: "raulmartucci28" },
     { nome: "Pedro Augusto", funcao: "Desenvolvedor Web", desc: "3º DES", cor: "gold", instagram: "aug.pedro_" },
   ];
