@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const VIDEO_THUMB_SRC = "";
 
   const EQUIPE = [
-    { nome: "Ana Julia Julião", funcao: "Arte e comunicação", desc: "1º JOD", cor: "pink", instagram: "" },
+    { nome: "Ana Julia Julião", funcao: "Arte e comunicação", desc: "1º JOD", cor: "pink", instagram: "theylove_anajuu" },
     { nome: "Sophia Guidi", funcao: "Game Artist", desc: "2º JOD", cor: "purple", instagram: "s_guidz" },
     { nome: "Nicolas Henrique", funcao: "Game Artist", desc: "2º JOD", cor: "blue", instagram: "" },
-    { nome: "Matheus", funcao: "Programação", desc: "3º JOD", cor: "green", instagram: "" },
+    { nome: "Matheus", funcao: "Programação", desc: "3º JOD", cor: "green", instagram: "o_thawnee" },
     { nome: "Josué", funcao: "Programação", desc: "3º JOD", cor: "green", instagram: "" },
     { nome: "Ana Beatriz C.", funcao: "Arte e comunicação", desc: "1º JOD", cor: "pink", instagram: "beatrizlwy" },
     { nome: "Raul Galdino", funcao: "Desenvolvedor Web", desc: "3º DES", cor: "gold", instagram: "raulmartucci28" },
