@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const LINK_DO_JOGO = "#";
 
   // adicionar mp4 aqui
-  const VIDEO_GAMEPLAY_SRC = "";
+  const VIDEO_GAMEPLAY_SRC = "assets/videogameplay.mp4";
 
   const VIDEO_THUMB_SRC = "";
 
